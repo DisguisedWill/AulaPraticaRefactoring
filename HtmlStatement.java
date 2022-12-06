@@ -2,16 +2,6 @@ import java.util.Enumeration;
 
 public class HtmlStatement extends Statement {
 
-    public String value(Customer aCustomer) {
-        Enumeration rentals = aCustomer.getRentals();
-        String result = writeName(aCustomer);
-        result += writeMovies(rentals);
-        //add footer lines
-        result += writeFooter(aCustomer);
-      
-        return result;
-   }
-
     public String writeName(Customer aCustomer) {
         return "<H1>Rentals for <EM>" + aCustomer.getName() +
         "</EM></H1><P>\n";
