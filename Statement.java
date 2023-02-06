@@ -14,7 +14,7 @@ public abstract class Statement {
         result += writeFooter(aCustomer);
       
         return result;
-   }
+    }
 
 
 

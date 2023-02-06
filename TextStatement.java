@@ -3,18 +3,18 @@ import java.util.Enumeration;
 public class TextStatement extends Statement {
     
     public String value(Customer aCustomer) {
-      Enumeration rentals = aCustomer.getRentals();
-      String result = writeName(aCustomer);
-      result += writeMovies(rentals);
-      //add footer lines
-      result += writeFooter(aCustomer);
+        Enumeration rentals = aCustomer.getRentals();
+        String result = writeName(aCustomer);
+        result += writeMovies(rentals);
+        //add footer lines
+        result += writeFooter(aCustomer);
       
-      return result;
-   }
+        return result;
+    }
 
     public String writeName(Customer aCustomer) {
         return "Rental Record for " + aCustomer.getName() +
-      "\n";
+        "\n";
     }
 
     public String writeMovies(Enumeration rentals) {
